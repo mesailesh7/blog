@@ -10,7 +10,7 @@ export const getPosts = async (req, res) => {
   } catch (error) {
     res.send(400).json("messae: error problemß")
   }
-};
+};                                                         
 
 export const createPost = (req, res) => {
  const post = req.body,
