@@ -1,9 +1,9 @@
 export default (posts = [], action) => {
   switch (action.type) {
     case "FETCH_ALL":
-      return postse;
+      return posts;
     case "CREATE":
-      return postse;
+      return posts;
     default:
       return posts;
   }
