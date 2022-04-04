@@ -20,3 +20,5 @@ export const createPost = (post) => async (dispatch) => {
     console.log(error);
   }
 };
+
+// export const updatePost = { id };
