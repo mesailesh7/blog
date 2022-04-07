@@ -8,6 +8,8 @@ import useStyles from "./styles";
 
 import { createPost } from "../../actions/posts";
 
+// get the current id
+
 const Form = () => {
   const [postData, setPostData] = useState({
     creator: "",
