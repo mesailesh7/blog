@@ -27,13 +27,6 @@ export const createPost = async (req, res) => {
 
 export const updatePost = async (req, res) => {
   const { id: _id } = req.params;
-<<<<<<< HEAD
-
-  if (mongoose.Types.ObjectId.isValid(_id))
-    return res.status(404).send("No post with that id");
-
-  PostMessage.findByIdAndUpdate(Pid);
-=======
   const post = req.body;
 
   if (!mongoose.Types.ObjectId.isValid(_id))
@@ -43,5 +36,4 @@ export const updatePost = async (req, res) => {
     new: true,
   });
   res.json(updatedPost);
->>>>>>> 505c5e53eac947253389853722ee0269a30cffa3
 };
